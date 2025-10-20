@@ -1,0 +1,10 @@
+pip install torch torchvision torchaudio        # PyTorch (avec torchvision pour transforms)
+pip install ultralytics                         # YOLOv8 (officiel ultralytics)
+pip install matplotlib seaborn                  # visualisation (countplots, images)
+pip install pandas numpy                         # gestion et traitement des données
+pip install scikit-learn                         # métriques, split dataset si besoin
+pip install opencv-python                        # manipulation d’images (blur, noise, lecture)
+pip install pillow                               # gestion images
+pip install streamlit                            # interface web interactive
+pip install tqdm                                # barre de progression pour les boucles
+pip install albumentations                       # augmentations d’images avancées (blur, noise, flip)
