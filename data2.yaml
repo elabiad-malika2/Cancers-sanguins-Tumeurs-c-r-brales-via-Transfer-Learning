@@ -1,0 +1,9 @@
+augment: true
+names:
+- Glioma
+- Meningioma
+- No Tumor
+- Pituitary
+nc: 4
+train: Data/outputpath/images/Train
+val: Data/outputpath/images/Val
