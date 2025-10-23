@@ -7,8 +7,9 @@ seaborn
 pandas                   # gestion et traitement des données
 numpy
 scikit-learn             # métriques, split dataset si besoin
-opencv-python            # manipulation d’images (blur, noise, lecture)
+opencv-python            # manipulation d'images (blur, noise, lecture)
 Pillow                   # gestion images
 streamlit                # interface web interactive
 tqdm                     # barre de progression pour les boucles
-albumentations           # augmentations d’images avancées (blur, noise, flip)
+albumentations           # augmentations d'images avancées (blur, noise, flip)
+split-folders            # automatiser le split train/val/test
