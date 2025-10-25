@@ -1,9 +1,19 @@
-augment: true
+
+train: Data/outputpath/images/Train
+val: Data/outputpath/images/Val
 names:
 - Glioma
 - Meningioma
 - No Tumor
 - Pituitary
 nc: 4
-train: Data/outputpath/images/Train
-val: Data/outputpath/images/Val
+
+
+augmentation:
+  flipud: 0.5
+  fliplr: 0.5
+  mosaic: 1.0
+  mixup: 0.2
+  hsv_h: 0.015
+  hsv_s: 0.7
+  hsv_v: 0.4
