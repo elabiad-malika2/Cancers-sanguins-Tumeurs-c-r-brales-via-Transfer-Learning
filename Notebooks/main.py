@@ -1,11 +1,16 @@
 import streamlit as st
 import googleNet
 import yolo
+import documentation
 
-st.sidebar.title("Navigation")
-page = st.sidebar.radio("Go to:", ["App blood cells", "App brain cells"])
+st.set_page_config(page_title="Medical Image Analysis", layout="wide", page_icon="🏥")
 
-if page == "App blood cells":
+st.sidebar.title("🏥 Navigation")
+page = st.sidebar.radio("Go to:", ["📚 Documentation", "🩸 Blood Cell Classification", "🧠 Brain Tumor Detection"])
+
+if page == "📚 Documentation":
+    documentation.app()
+elif page == "🩸 Blood Cell Classification":
     googleNet.app()
-elif page == "App brain cells":
+elif page == "🧠 Brain Tumor Detection":
     yolo.app()

@@ -5,7 +5,6 @@ from torchvision import models, transforms
 from PIL import Image
 
 def app():
-    st.set_page_config(page_title="Blood Cell Classification", layout="centered")
     st.title("🩸 Blood Cell Classification with GoogLeNet")
     
     st.markdown("""
@@ -15,7 +14,7 @@ def app():
 
     @st.cache_resource
     def load_model():
-        model_path = "models/googlenet_complete.pth"
+        model_path = "../models/googlenet_complete.pt"
         # ✅ Charger le modèle complet (pas seulement le state_dict)
         model = torch.load(model_path, map_location=torch.device("cpu"), weights_only=False)
         model.eval()
